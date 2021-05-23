@@ -19,8 +19,8 @@ export default class WriteStoryScreen extends React.Component {
 
   submitStory=()=>{
      console.log("I am in submit button")
-     console.log (db.collections("stories"))
-    db.collections("stories").add({
+     console.log (db.collection("stories"))
+    db.collection("stories").add({
       title:this.state.title,
       author:this.state.author,
       storyText:this.state.storyText
